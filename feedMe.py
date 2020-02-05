@@ -6,7 +6,7 @@ import wget
 from google.cloud import vision
 from google.cloud.vision import types
 
-def vision_feed():
+def vision_feed(success):
     try:
         auth = tweepy.OAuthHandler(keys.consumer_key, keys.consumer_secret)
         auth.set_access_token(keys.access_token, keys.access_token_secret)
@@ -48,4 +48,5 @@ def vision_feed():
     except ValueError:
         success = 0
 
-vision_feed()
+success = 0
+vision_feed(success)
