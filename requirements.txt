@@ -18,3 +18,4 @@ tweepy == 3.8.0
 gpg==1.10.0
 grpcio==1.26.0
 
+libgpgme==1.13.1
