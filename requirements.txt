@@ -3,7 +3,7 @@ google-api-core==1.16.0
 google-auth==1.11.0
 google-cloud==0.34.0
 google-cloud-vision==0.41.0
-
+wget==3.2
 
 tweepy == 3.8.0
 

@@ -2,6 +2,7 @@ import tweepy
 import keys
 import io
 import os
+import wget
 from google.cloud import vision
 from google.cloud.vision import types
 
