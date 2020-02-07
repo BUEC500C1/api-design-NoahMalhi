@@ -11,6 +11,7 @@ def vision_feed(success):
 
     data = {}
     data['tweets'] = []
+
     try:
         auth = tweepy.OAuthHandler(keys.consumer_key, keys.consumer_secret)
         auth.set_access_token(keys.access_token, keys.access_token_secret)
@@ -35,11 +36,20 @@ def vision_feed(success):
                 labels = response.label_annotations
                 print('')
                 print('Description ' + test + ':')
-                
+                labelDescr = ""
                 for label in labels:
                     print(label.description)
+                    labelDescr = labelDescr + (label.description)
 
-            success = 1
+                data['tweets'].append({
+                    'tweet': tweet.text,
+                    'img': test,
+                    'description': labelDescr
+                })
+            
+        with open('feed.json', 'w') as feed_res:
+            json.dump(data, feed_res)   
+        success = 1
 
     except ValueError:
         success = 0
