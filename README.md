@@ -1,7 +1,7 @@
 # Twitter Api
 HW 2 Option 1:
 
-My design utilizes tweepy to analyze one's twitter feed. If there is a picture attached to the tweet, it will then download and analyze the tweet using google vision. This will describe what the images look like. To run the code --> python3 feedMe.py
+My design utilizes tweepy to analyze one's twitter feed. If there is a picture attached to the tweet, it will then download and analyze the image using google vision. This will describe what the images look like. To run the code --> python3 feedMe.py
 
 Running the code will only work if one replaces the tweepy keys with their own keys.
 
