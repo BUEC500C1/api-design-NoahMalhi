@@ -27,4 +27,5 @@ The following is the resulting json file made to store the data.
 <br >
 <img src="json.png" width="55%" /> <br>
 
+<br >
 In the directory in which the program is run. The images will be installed in their own respective formats: .jpg, .png, etc
